@@ -1,0 +1,44 @@
+.mainInfoSection
+    position: relative
+    display: flex
+    justify-content: center
+
+    width: 100%
+
+    padding: 160px 50px 150px
+
+    margin-bottom: 60px
+
+    background-image: url('../../../public/background.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+
+    &__section
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        width: 590px
+
+        &_logo
+            position: relative
+            width: 280px
+            height: 210px
+            margin-bottom: 20px
+            &__image
+        &_description
+            margin-bottom: 40px
+            &__text
+                font-size: 30px
+                text-align: center
+
+
+@media (max-width: 800px)
+    .mainInfoSection
+        &__section
+            &_logo
+                width: 200px
+                height: 180px
+            &_description
+                &__text
+                    font-size: 20px

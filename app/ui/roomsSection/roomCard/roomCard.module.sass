@@ -1,0 +1,76 @@
+.RoomCard__card
+    position: relative
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    padding: 20px 10px
+
+    background-color: #F5F5DC
+    -webkit-box-shadow: 0px 0px 32px 10px rgba(71, 74, 81, 0.29)
+    -moz-box-shadow: 0px 0px 32px 10px rgba(71, 74, 81, 0.29)
+    box-shadow: 0px 0px 32px 10px rgba(71, 74, 81, 0.29)
+    &__title
+        margin-bottom: 15px
+        &_text
+            font-size: 40px
+            color: #474a51
+
+    &__photo
+        display: grid
+        position: relative
+
+        width: 80%
+        height: 70%
+
+        margin-bottom: 20px
+
+    &__advantages
+        width: 100%
+
+        margin-bottom: 20px
+        &_list
+            display: flex
+            justify-content: center
+            &__element
+                display: flex
+                align-items: center
+                font-size: 14px
+                color: #474a51
+                &:not(:last-child)
+                    margin-right: 20px
+                &_image
+                    margin-right: 5px
+
+@media (max-width: 1230px)
+    .RoomCard__card
+        &__title
+            &_text
+        &__advantages
+            &_list
+                &__element
+                    font-size: 12px
+
+@media (max-width: 1000px)
+    .RoomCard__card
+        &__title
+            &_text
+                text-align: center
+
+@media (max-width: 800px)
+    .RoomCard__card
+        &__title
+            &_text
+                font-size: 35px
+                text-align: center
+        &__photo
+            width: 100%
+
+        &__advantages
+            &_list
+                &__element
+                    font-size: 13px
+                    &:not(:last-child)
+                        margin-right: 10px

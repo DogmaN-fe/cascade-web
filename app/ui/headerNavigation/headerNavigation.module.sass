@@ -1,0 +1,46 @@
+.navigation
+    &__links
+        display: flex
+        &_link
+            list-style-type: none
+            &:not(:last-child)
+                margin-right: 25px
+            &_href
+                font-size: 20px
+
+                transition: color 0.3s ease
+                &:hover
+                    color: #a59030
+
+@media (max-width: 1130px)
+    .navigation
+        &__links
+            &_link
+                &:not(:last-child)
+                    margin-right: 20px
+                &_href
+                    font-size: 17px
+
+@media (max-width: 800px)
+    .navigation__links
+        display: none
+        &_link
+            margin-bottom: 30px
+            &_href
+                font-size: 40px
+
+    .navigation_mobile
+        display: block !important
+        &__button
+            border: none
+            background: none
+            font-size: 30px
+        &__links
+            display: none
+            position: fixed
+            width: 100%
+            height: 100vh
+            padding: 20px
+            top: 0
+            left: 0
+            background-color: #141516c9

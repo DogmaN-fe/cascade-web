@@ -1,0 +1,52 @@
+.roomsSection
+    width: 100%
+
+    margin-bottom: 60px
+    &__section
+        display: flex
+        flex-direction: column
+
+        align-items: center
+
+        width: 100%
+
+        padding: 40px 0
+
+        overflow: hidden
+
+        &_title
+            margin-bottom: 30px
+            &__text
+                font-size: 60px
+                color: #474a51
+
+        &_rooms
+            width: 90%
+            display: grid
+
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: repeat(2, 540px)
+            gap: 100px
+
+            margin-bottom: 55px
+@media (max-width: 1250px)
+    .roomsSection
+        &__section
+            &_rooms
+                width: 100%
+                grid-template-rows: repeat(2, 480px)
+                gap: 15px
+
+@media (max-width: 800px)
+    .roomsSection
+        &__section
+            &_title
+                &__text
+                    font-size: 40px
+                    text-align: center
+            &_rooms
+                width: 100%
+                grid-template-columns: 1fr
+                gap: 20px
+                grid-template-rows: repeat(4, 500px)
+                margin-bottom: 15px
