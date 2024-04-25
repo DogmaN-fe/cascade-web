@@ -19,9 +19,11 @@ export default function MainInfoSection(): ReactElement {
           />
         </div>
         <div className={styles.mainInfoSection__section_description}>
-          <p className={styles.mainInfoSection__section_description__text}>
-            Резиденция Каскад 3* by OhotelGroupe – отель с открытым бассейном,
-            сауной и лануж-зоной на крыше.
+          <p className={styles.mainInfoSection__section_description__title}>
+            <strong>Резиденция Каскад 3* by OhotelGroupe</strong>
+            {/* <br />
+             {/* – отель с открытым бассейном,
+            сауной и лаунж-зоной на крыше. */}
           </p>
           <p className={styles.mainInfoSection__section_description__text}>
             Настоящая роскошь и полный релакс на морском отдыхе при высоком

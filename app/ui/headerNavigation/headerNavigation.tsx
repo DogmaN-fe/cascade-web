@@ -79,6 +79,15 @@ export default function HeaderNavigation() {
         >
           <li className={styles.navigation__links_link}>
             <Link
+              href="/#hotel"
+              className={styles.navigation__links_link_href}
+              onClick={handleClick}
+            >
+              Фото отеля
+            </Link>
+          </li>
+          <li className={styles.navigation__links_link}>
+            <Link
               href="/#rooms"
               className={styles.navigation__links_link_href}
               onClick={handleClick}

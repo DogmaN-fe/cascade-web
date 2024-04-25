@@ -77,7 +77,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: #CFB53B/* 474a51 */;
+  color: #FFCF40;
+  /* color: #FFCF40; */
+  /* color: #ED760E; */
+  /* color: #FFB02E; */
   list-style-type: none
 }
 
